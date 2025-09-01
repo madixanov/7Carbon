@@ -1,0 +1,31 @@
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&display=swap');
+
+.services-container {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 7rem;
+}
+
+.services-container h1 {
+  text-transform: uppercase;
+  font-size: 5rem;
+  font-weight: 700;
+  font-family: "Exo 2", sans-serif;
+  margin: 0;
+}
+
+.service-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.9rem;
+  margin-top: 2rem;
+}
+
+.service-row img {
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+.service-row img:hover {
+  transform: scale(1.02);
+}
