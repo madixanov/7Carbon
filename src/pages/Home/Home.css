@@ -1,9 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&display=swap');
+
 .banner {
   background: url("/banner.svg");
   background-repeat: no-repeat;
   background-size: cover;
-  height: 76.8rem;
-  width: 144rem;
+  background-position: center;
+  height: 100%;
+  width: 100%;
   margin: 0 auto;
   margin-bottom: 7rem;
 }
@@ -17,9 +20,30 @@ main {
   height: 100%;
 }
 
-.map {
+
+.map-container {
+  font-family: "Exo 2", sans-serif;
   display: flex;
-  justify-content: center;
-  align-items: center;
   margin-bottom: 5rem;
+  flex-direction: column;
+}
+
+.map-container img {
+  width: 100%;
+}
+
+.map-container h1 {
+  font-size: 5rem;
+}
+
+@media (max-width: 800px) {
+  .map-container h1 {
+    font-size: 4.5rem;
+  }
+}
+
+@media (max-width: 500px) {
+  .map-container h1 {
+    font-size: 3.5rem;
+  }
 }

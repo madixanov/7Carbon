@@ -1,12 +1,15 @@
 import "./Projects.css"
-import mainProjects from "../../../../assets/photo/main-projects.svg"
+import mainProject from "../../../../assets/photo/main-porject.svg"
 import project from "../../../../assets/photo/project.svg"
 
 export default function Projects() {
   return (
     <div className="projects-container">
       <h1>Наши работы</h1>
-      <img src={mainProjects} alt="main-projects" className="main-projects"/>
+      <div className="main-project-container">
+        <img src={mainProject} alt="main-project" />
+        <img src={mainProject} alt="main-project" />
+      </div>
       <div className="projects-row">
         <div className="project">
           <img src={project} alt="project" />

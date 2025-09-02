@@ -12,13 +12,6 @@ footer {
   align-items: center;
 }
 
-.logo-text {
-  font-size: 1.8rem;
-  font-weight: 600;
-  cursor: pointer;
-  font-family: "Inter", sans-serif;
-}
-
 .signup-container {
   display: flex;
   gap: 1.5rem;
@@ -81,4 +74,36 @@ footer {
 
 .icon-row img:hover {
   transform: scale(1.1);
+}
+
+.logo-text-f {
+  font-size: 1.8rem;
+  font-weight: 600;
+  cursor: pointer;
+  font-family: "Inter", sans-serif;
+}
+
+@media (max-width: 800px) {
+  .footer-container {
+    flex-direction: column;
+    gap: 3rem;
+  }
+
+  .logo-text-f {
+    font-size: 3rem;
+  }
+
+  .signup-container input {
+    width: 60%;
+  }
+
+  .signup-container button {
+    width: 40%;
+    font-size: 1.4rem;
+    padding: 0.8rem 2.5rem;
+  }
+
+  .icon-row {
+    justify-content: center;
+  }
 }

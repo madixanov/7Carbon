@@ -8,7 +8,7 @@ export default function Footer() {
     <footer>
       <div className="main-container">
         <div className="footer-container">
-          <div className="logo-text">7Carbon</div>
+          <div className="logo-text-f">7Carbon</div>
           <form className="signup-container">
             <input type="email" placeholder="Email" />
             <button>Sign Up Now</button>

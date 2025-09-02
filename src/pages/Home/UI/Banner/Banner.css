@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&display=swap');
 
 .banner-container {
-  height: 768px;
+  height: 76.8rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -46,4 +46,30 @@
 
 .banner-container button:hover {
   transform: scale(1.1);
+}
+
+@media (max-width: 800px) {
+  .banner-container {
+    height: 72rem;
+  }
+  
+  .banner-container h1 {
+    font-size: 5rem;
+    width: 100%;
+  }
+
+  .banner-container p {
+    width: 100%;
+  }
+}
+
+@media (max-width: 500px) {
+  .banner-container h1 {
+    font-size: 3.5rem;
+    width: 100%;
+  }
+
+  .banner-container p {
+    font-size: 1.4rem;
+  }
 }

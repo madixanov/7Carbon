@@ -30,8 +30,6 @@ export default function HomePage() {
         <div className="map-container">
           <div className="main-container">
             <h1>НАШ ОФИС</h1>
-          </div>
-          <div className="map">
             <img src={map} alt="map" />
           </div>
         </div>

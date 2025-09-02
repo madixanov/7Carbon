@@ -81,3 +81,62 @@
   cursor: pointer;
   font-family: "Exo 2", sans-serif;
 }
+
+.main-project-container {
+  display: flex;
+  margin-bottom: 3rem;
+  cursor: pointer;
+  width: 100%;
+}
+
+.main-project-container img {
+  width: 100%;
+}
+
+@media (max-width: 1440px) {
+  .main-project-container img {
+    width: 50%;
+  }
+}
+
+@media (max-width: 1000px) {
+  .main-project-container {
+    flex-direction: column;
+  }
+  .main-project-container img {
+    width: 100%;
+  }
+}
+
+@media (max-width: 800px) {
+  .projects-row {
+    gap: 1rem;
+  }
+
+  .project img {
+    width: 100%;
+  }
+
+  .project h3 {
+    font-size: 2rem;
+  }
+
+  .project span {
+    font-size: 1.4rem;
+  }
+
+  .project button {
+    font-size: 1.4rem;
+    height: 4rem;
+  }
+
+  .projects-container h1 {
+    font-size: 4.5rem;
+  }
+}
+
+@media (max-width: 500px) {
+  .projects-container h1 {
+    font-size: 3.5rem;
+  }
+}

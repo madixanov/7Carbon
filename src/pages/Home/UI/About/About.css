@@ -70,3 +70,52 @@
   border-radius: 0.4rem;
   font-family: "Exo 2", sans-serif;
 }
+
+@media (max-width: 1200px) {
+  .about-sub-container {
+    flex-direction: column;
+  }
+
+  .about-sub-container.second {
+    flex-direction: column-reverse;
+  }
+
+  .about-sub-container img {
+    width: 100%;
+  }
+}
+
+@media (max-width: 600px) {
+  .about-container h1 {
+    font-size: 4.5rem;
+    width: 100%;
+    margin: 0;
+  }
+
+  .about-sub-container {
+    flex-direction: column;
+  }
+
+  .about-sub-container.second {
+    flex-direction: column-reverse;
+  }
+
+  .about-sub-container img {
+    width: 100%;
+  }
+
+  .about-sub-container h2 {
+    font-size: 3rem;
+    width: 100%;
+  }
+
+  .about-text button {
+    width: 100%;
+  }
+}
+
+@media (max-width: 500px) {
+  .about-container h1 {
+    font-size: 3.5rem;
+  }
+}

@@ -28,7 +28,7 @@ export default function About() {
           <button className="about-button">Подробнее</button>
         </div>
       </div>
-      <div className="about-sub-container">
+      <div className="about-sub-container second">
         <div className="about-text">
           <h2>Почему нас считают лучшим специализированным магазином в Ташкенте</h2>
           <p>Мы создали репутацию в OkeeChobee за то, что они не только сделали обновления автомобилей, но и делали их правильно. Вот что делает Nunez Auto Service выбором для серьезных автомобилей и повседневных водителей:</p>
