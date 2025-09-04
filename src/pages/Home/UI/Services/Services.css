@@ -40,7 +40,6 @@
   box-sizing: border-box;
 }
 
-/* Ховер — увеличиваем + градиент */
 .service:hover {
   transform: scale(1.02);
   background: linear-gradient(90deg, #CC9933, #000);

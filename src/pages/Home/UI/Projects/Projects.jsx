@@ -29,7 +29,6 @@ export default function Projects() {
       </div>
       <div className="projects-row">
         <Swiper
-          spaceBetween={30}
           pagination={{ clickable: true }}
           navigation={true}
           keyboard={true}
@@ -39,12 +38,15 @@ export default function Projects() {
           breakpoints={{
             320: {
               slidesPerView: 2, // телефоны побольше
+              spaceBetween: 10,
             },
             768: {
               slidesPerView: 2, // планшеты
+              spaceBetween: 20,
             },
             1024: {
               slidesPerView: 3, // десктоп
+              spaceBetween: 30,
             },
           }}
         >
