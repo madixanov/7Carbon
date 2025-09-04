@@ -18,7 +18,6 @@ export default function Projects() {
       <div className="projects-row">
         <Swiper
           spaceBetween={30}
-          cssMode={true}
           pagination={{ clickable: true }}
           navigation={true}
           keyboard={true}
