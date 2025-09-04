@@ -1,5 +1,5 @@
 import "./Projects.css";
-import mainProject from "../../../../assets/photo/main-porject.svg";
+import bmw from "../../../../assets/photo/bmw.svg";
 import project from "../../../../assets/photo/project.svg";
 import { Swiper, SwiperSlide } from "swiper/react";
 
@@ -12,8 +12,20 @@ export default function Projects() {
     <div className="projects-container">
       <h1>Наши работы</h1>
       <div className="main-project-container">
-        <img src={mainProject} alt="main-project" />
-        <img src={mainProject} alt="main-project" />
+        <div className="main-project">
+          <img src={bmw} alt="main-project" />
+          <div className="project-text">
+            <h3>Работа Main 1</h3>
+            <p>Описание текста  самой карточки. <br/>Этот текст написан для визуального отображение</p>
+          </div>
+        </div>
+        <div className="main-project">
+          <img src={bmw} alt="main-project" />
+          <div className="project-text">
+            <h3>Работа Main 2</h3>
+            <p>Описание текста  самой карточки. <br/>Этот текст написан для визуального отображение</p>
+          </div>
+        </div>
       </div>
       <div className="projects-row">
         <Swiper
