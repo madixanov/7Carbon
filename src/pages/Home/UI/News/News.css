@@ -18,15 +18,18 @@
 
 .news-row {
   display: flex;
-  gap: 2rem;
-  align-items: center;
+  flex-wrap: wrap;
+  gap: 2rem; /* расстояние между карточками */
+  align-items: flex-start;
   justify-content: center;
 }
 
+/* Дефолт — 3 карточки */
 .news {
   cursor: pointer;
   transition: all 0.3s ease-in-out;
-  width: 100%;
+  width: calc((100% - (2rem * 2)) / 3); /* 3 карточки + 2 промежутка */
+  box-sizing: border-box;
 }
 
 .news img {
@@ -71,61 +74,26 @@
   height: 6rem;
 }
 
-@media (max-width: 1440px) {
-  .news {
-    width: 100%;
-  }
-}
+/* ----- АДАПТИВ ----- */
 
+/* 3 карточки → 2 карточки */
 @media (max-width: 1200px) {
   .news {
-    width: 49%;
-  }
-
-  .news-row {
-    flex-wrap: wrap;
+    width: calc((100% - 2rem) / 2); /* 2 карточки + 1 промежуток */
   }
 }
 
-@media (max-width: 1000px) {
-  .news-row {
-    gap: 1.8rem;
-  }
-
+/* 2 карточки → 1 карточка */
+@media (max-width: 700px) {
   .news {
-    width: 49%;
-  }
-
-  .news img {
     width: 100%;
   }
 }
 
+/* Заголовок уменьшаем на мобильных */
 @media (max-width: 800px) {
   .news-container h1 {
     font-size: 4.5rem;
-  }
-
-  .news-row {
-    gap: 2rem;
-  }
-
-  .news {
-    width: 48.3%;
-  }
-
-  .news img {
-    width: 100%;
-  }
-}
-
-@media (max-width: 600px) {
-  .news {
-    width: 100%;
-  }
-
-  .news img {
-    width: 100%;
   }
 }
 

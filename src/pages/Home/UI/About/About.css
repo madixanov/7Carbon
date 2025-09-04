@@ -112,7 +112,7 @@
   font-size: 1.8rem;
   text-transform: uppercase;
   margin: 0;
-  width: 80%;
+  width: 100%;
 }
 @media (max-width: 1200px) {
   .about-sub-container {

@@ -170,10 +170,6 @@
   }
 }
 
-
-
-
-
 @media (max-width: 1000px) {
   .main-project-container {
     flex-direction: column;

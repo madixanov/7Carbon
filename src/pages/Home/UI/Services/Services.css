@@ -18,38 +18,35 @@
 .service-row {
   display: flex;
   flex-wrap: wrap;
-  gap: 0.9rem;
+  gap: 1.5rem; /* расстояние между карточками */
   margin-top: 2rem;
   width: 100%;
 }
 
-.service-row img {
-  transition: all 0.3s ease-in-out;
-  cursor: pointer;
-}
-
-.service:hover {
-  transform: scale(1.02);
-}
-
+/* Дефолт — 3 карточки */
 .service {
-  background-color: #1E1E1E;
+  background: #1E1E1E;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  width: 32.89%;
+  width: calc((100% - (1.5rem * 2)) / 3); /* 3 карточки + 2 промежутка */
   height: 24rem;
   border: none;
   border-radius: 3rem;
   padding: 2rem;
   font-family: "Manrope", sans-serif;
   position: relative;
-  transition: all 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+  box-sizing: border-box;
 }
 
+/* Ховер — увеличиваем + градиент */
 .service:hover {
+  transform: scale(1.02);
   background: linear-gradient(90deg, #CC9933, #000);
 }
+
+/* Заголовок карточки */
 .service-header {
   display: flex;
   justify-content: space-between;
@@ -64,18 +61,27 @@
   font-weight: 700;
 }
 
+/* Картинка внутри карточки */
 .service img {
   position: absolute;
   bottom: 0;
   right: 0;
+  transition: transform 0.3s ease-in-out;
 }
 
+/* Лёгкая анимация картинки */
+.service:hover img {
+  transform: scale(1.05);
+}
+
+/* Заголовок внутри карточки */
 .service-header span {
   font-size: 2.4rem;
   font-weight: 500;
   width: 22rem;
 }
 
+/* Текст внутри карточки */
 .service p {
   font-size: 1.6rem;
 }
@@ -85,73 +91,35 @@
   font-weight: 500;
 }
 
-@media (max-width: 1440px) {
+/* ----- АДАПТИВ ----- */
+
+/* 3 карточки → 2 карточки */
+@media (max-width: 1200px) {
   .service {
-    width: 32.85%;
+    width: calc((100% - 1.5rem) / 2); /* 2 карточки + 1 промежуток */
   }
 
   .service-header span {
-    width: 70%;
+    width: 100%;
   }
 }
 
-@media (max-width: 1200px) {
-  .service {
-    width: 49%;
-  }
-
-  .service-row {
-    gap: 1.15rem;
-  }
-}
-
-@media (max-width: 1000px) {
-  .service {
-    width: 49.3%;
-  }
-  .service-row {
-    gap: 1.25rem;
-  }
-
-  .service img {
-    width: 25rem;
-  }
-}
-
-@media (max-width: 800px) {
-  .services-container h1 {
-    font-size: 4.5rem;
-  }
-
-  .service-row {
-    gap: 2rem;
-  }
-
-  .service {
-    width: 48.5%;
-  }
-}
-
+/* 2 карточки → 1 карточка */
 @media (max-width: 700px) {
-  .service {
-    width: 48.2%;
-  }
-
-  .service img {
-    width: 23rem;
-  }
-}
-
-@media (max-width: 600px) {
   .service {
     width: 100%;
   }
 
   .service img {
-    width: 30rem;
+    width: 25rem;
+  }
+
+  .service-header span {
+    width: 100%;
   }
 }
 
+/* Заголовок уменьшаем на мобильных */
 @media (max-width: 500px) {
   .services-container h1 {
     font-size: 3.5rem;
