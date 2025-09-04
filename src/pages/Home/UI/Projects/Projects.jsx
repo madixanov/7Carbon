@@ -5,7 +5,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 
 import "swiper/css";
 import "swiper/css/navigation";
-import { Pagination } from "swiper/modules";
+import { Keyboard, Mousewheel, Pagination, Navigation } from "swiper/modules";
 
 export default function Projects() {
   return (
@@ -18,8 +18,12 @@ export default function Projects() {
       <div className="projects-row">
         <Swiper
           spaceBetween={30}
+          cssMode={true}
           pagination={{ clickable: true }}
-          modules={[Pagination]}
+          navigation={true}
+          keyboard={true}
+          loop={true}
+          modules={[Pagination, Navigation, Keyboard]}
           className="mySwiper"
           breakpoints={{
             320: {
