@@ -138,7 +138,7 @@
 }
 
 /* Прячем стрелки на телефонах */
-@media (max-width: 600px) {
+@media (max-width: 1024px) {
   .swiper-button-next::after,
   .swiper-button-prev::after {
     display: none;
