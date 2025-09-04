@@ -1,6 +1,5 @@
 import "./About.css"
-import card from "../../../../assets/photo/card.svg"
-import card2 from "../../../../assets/photo/card2.svg"
+import gallery from "../../../../assets/icons/gallery.svg"
 
 export default function About() {
   return (
@@ -8,11 +7,11 @@ export default function About() {
       <h1>О нашей компании</h1>
       <div className="about-sub-container">
         <div className="image-container">
-          <img src={card} alt="photo" />
-          {/* <div className="image-description">
+          <img src={gallery} alt="photo" />
+          <div className="image-description">
             <h3>Информация 1</h3>
-            <p>Описание текста  самой карточки.Этот текст написан для визуального отображение</p>
-          </div> */}
+            <p>Описание текста  самой карточки. Этот текст написан для визуального отображение</p>
+          </div>
         </div>
         <div className="about-text">
           <h2>Почему нас считают лучшим специализированным магазином в Ташкенте</h2>
@@ -43,11 +42,11 @@ export default function About() {
           <button className="about-button">Подробнее</button>
         </div>
         <div className="image-container">
-          <img src={card2} alt="photo" />
-          {/* <div className="image-description">
-            <h3>Информация 1</h3>
-            <p>Описание текста  самой карточки.Этот текст написан для визуального отображение</p>
-          </div> */}
+          <img src={gallery} alt="photo" />
+          <div className="image-description">
+            <h3>Информация 2</h3>
+            <p>Описание текста  самой карточки. Этот текст написан для визуального отображение</p>
+          </div>
         </div>
       </div>
     </div>
