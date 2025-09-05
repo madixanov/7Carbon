@@ -7,11 +7,16 @@ import "swiper/css";
 import "swiper/css/navigation";
 import { Keyboard, Mousewheel, Pagination, Navigation } from "swiper/modules";
 
+import AOS from 'aos';
+import 'aos/dist/aos.css'; // You can also use <link> for styles
+// ..
+AOS.init();
+
 export default function Projects() {
   return (
     <div className="projects-container">
-      <h1>Наши работы</h1>
-      <div className="main-project-container">
+      <h1 data-aos="fade-up" data-aos-duration="1000">Наши работы</h1>
+      <div className="main-project-container" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100">
         <div className="main-project">
           <img src={bmw} alt="main-project" />
           <div className="project-text">
@@ -27,7 +32,7 @@ export default function Projects() {
           </div>
         </div>
       </div>
-      <div className="projects-row">
+      <div className="projects-row" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
         <Swiper
           pagination={{ clickable: true }}
           navigation={true}

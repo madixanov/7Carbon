@@ -1,11 +1,15 @@
 import "./About.css"
 import gallery from "../../../../assets/icons/gallery.svg"
+import AOS from 'aos';
+import 'aos/dist/aos.css'; // You can also use <link> for styles
+// ..
+AOS.init();
 
 export default function About() {
   return (
     <div className="about-container">
-      <h1>О нашей компании</h1>
-      <div className="about-sub-container">
+      <h1 data-aos="fade-up" data-aos-duration="1000">О нашей компании</h1>
+      <div className="about-sub-container" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100">
         <div className="image-container">
           <img src={gallery} alt="photo" />
           <div className="image-description">
@@ -27,7 +31,7 @@ export default function About() {
           <button className="about-button">Подробнее</button>
         </div>
       </div>
-      <div className="about-sub-container second">
+      <div className="about-sub-container second" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
         <div className="about-text">
           <h2>Почему нас считают лучшим специализированным магазином в Ташкенте</h2>
           <p>Мы создали репутацию в OkeeChobee за то, что они не только сделали обновления автомобилей, но и делали их правильно. Вот что делает Nunez Auto Service выбором для серьезных автомобилей и повседневных водителей:</p>

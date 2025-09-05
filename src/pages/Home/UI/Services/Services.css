@@ -38,6 +38,7 @@
   position: relative;
   transition: 0.3s ease-in-out;
   box-sizing: border-box;
+  cursor: pointer;
 }
 
 .service:hover {
