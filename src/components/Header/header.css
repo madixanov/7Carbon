@@ -127,6 +127,10 @@ header.scrolled .burger-menu span {
   scale: 1.02;
 }
 
+.selected {
+  font-weight: 700;
+}
+
 @media (max-width: 1000px) {
   .desktop-only {
     display: none;

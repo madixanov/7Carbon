@@ -35,7 +35,6 @@ export default function Projects() {
       <div className="projects-row" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
         <Swiper
           pagination={{ clickable: true }}
-          navigation={true}
           keyboard={true}
           loop={true}
           modules={[Pagination, Navigation, Keyboard]}
