@@ -3,6 +3,7 @@ import Footer from "../../components/Footer/Footer"
 import Services from "../../components/Services/Services"
 import Location from "../../components/Location/Location"
 import "./Products.css"
+import ProductsSubContainer from "./UI/ProductsSubContainer"
 
 export default function ProductsPage() {
   return (
@@ -10,12 +11,7 @@ export default function ProductsPage() {
       <Header />
       <main className="products-main">
         <div className="main-container">
-          <div className="products-sub-container">
-            <div className="products-header-container">
-              <h1>Performance Parts for <span>[car industry name]</span></h1>
-              <p>Exhausts, Intakes, Tunes, and more!</p>
-            </div>
-          </div>
+          <ProductsSubContainer />
           <Services text="Наши услуги"/>
           <Location />
         </div>
