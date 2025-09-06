@@ -1,6 +1,7 @@
 import "./header.css";
 import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
+import useSelectedStore from "../../store/nav-store"
 
 import AOS from 'aos';
 import 'aos/dist/aos.css'; // You can also use <link> for styles
@@ -11,7 +12,7 @@ AOS.init();
 export default function Header() {
   const [isScrolled, setIsScrolled] = useState(false);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
-  const [selectedNav, setSelectedNav] = useState("home");
+  const { selected, setSelected } = useSelectedStore();
 
   // Отслеживание скролла для хедера
   useEffect(() => {
@@ -39,14 +40,14 @@ export default function Header() {
     }, [mobileMenuOpen]);
 
   const handleClick = (page) => {
-    setSelectedNav(page);
+    setSelected(page);
   }
 
   return (
     <header className={isScrolled ? "scrolled" : ""}>
       <div className="main-container">
         <div className={`header-container ${isScrolled ? "scrolled" : ""}`}>
-          <Link style={{textDecoration: "none", color: "white"}} to="/"><span className="logo-text">7Carbon</span></Link>
+          <Link style={{textDecoration: "none", color: "white"}} to="/"><span className="logo-text" onClick={() => handleClick("home")}>7Carbon</span></Link>
 
           <div className="mobile-controls mobile-only">
             <div className="burger-menu" onClick={() => setMobileMenuOpen((prev) => !prev)}>
@@ -58,10 +59,10 @@ export default function Header() {
 
           {/* Десктопное меню */}
           <nav className="nav-links">
-            <Link style={{textDecoration: "none", color: "white"}} to="/"><span onClick={() => handleClick("home")} className={selectedNav === "home" && "selected"}>Главная страница</span></Link>
-            <Link style={{textDecoration: "none", color: "white"}} to="/products"><span onClick={() => handleClick("products")} className={selectedNav === "products" && "selected"}>Продукты</span></Link>
-            <span onClick={() => handleClick("advantages")} className={selectedNav === "advantages" && "selected"}>Наши преимущества</span>
-            <span onClick={() => handleClick("cotancts")} className={`contacts ${selectedNav === 'contacts' && "selected"}`}>
+            <Link style={{textDecoration: "none", color: "white"}} to="/"><span onClick={() => handleClick("home")} className={selected === "home" && "selected"}>Главная страница</span></Link>
+            <Link style={{textDecoration: "none", color: "white"}} to="/products"><span onClick={() => handleClick("products")} className={selected === "products" && "selected"}>Продукты</span></Link>
+            <span onClick={() => handleClick("advantages")} className={selected === "advantages" && "selected"}>Наши преимущества</span>
+            <span onClick={() => handleClick("cotancts")} className={`contacts ${selected === 'contacts' && "selected"}`}>
               Контакты
             </span>
           </nav>
