@@ -1,4 +1,5 @@
 import ProductsFilter from "./ProductFilter/ProductsFilter"
+import ProductsGrid from "./ProductsGrid/ProductsGrid.jsx"
 import "./ProductsSubContainer.css"
 
 export default function ProductsSubContainer() {
@@ -10,6 +11,7 @@ export default function ProductsSubContainer() {
       </div>
       <div className="products-search-container">
         <ProductsFilter />
+        <ProductsGrid />
       </div>
     </div>
   )

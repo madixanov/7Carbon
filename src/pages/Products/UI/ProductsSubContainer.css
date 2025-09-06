@@ -26,3 +26,11 @@
   font-size: 1.6rem;
   font-weight: 600;
 }
+
+.products-search-container {
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+  justify-content: start;
+  align-items: start;
+}

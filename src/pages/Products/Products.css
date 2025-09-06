@@ -1,9 +1,9 @@
 .products-main {
-  padding-top: 100px;
+  padding-top: 13rem;
 }
 
 .products-sub-container {
-  width: 102.4rem;
+  max-width: 102.4rem;
   margin: 0 auto;
   margin-bottom: 1.6rem;
 }

@@ -1,0 +1,13 @@
+.product-container {
+  background: white;
+  width: calc((100% - (1.5rem * 2)) / 3); /* формула для 3 карточек */
+  height: 28rem;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.product-container:hover {
+  box-shadow: 0 4px 10px rgba(255, 255, 255, 0.25);
+  transform: scale(1.05);
+}
