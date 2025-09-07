@@ -60,6 +60,6 @@
 
 @media (max-width: 800px) {
   .product-container {
-    width: calc((100% - (1.5rem * 2)) / 2);
+    width: calc((100% - (1.5rem)) / 2);
   }
 }
