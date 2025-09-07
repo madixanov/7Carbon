@@ -105,3 +105,17 @@
 .filter-button-cotainer button:active{
   background-color: #bf9a52;
 }
+
+@media (max-width: 800px) {
+  .products-filter-container {
+    width: 100%;
+  }
+
+  .filter-container {
+    display: flex;
+  }
+
+  .filter-container {
+    width: 100%;
+  }
+}

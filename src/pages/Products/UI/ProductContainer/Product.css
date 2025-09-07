@@ -3,7 +3,7 @@
 .product-container {
   background: white;
   width: calc((100% - (1.5rem * 2)) / 3); /* формула для 3 карточек */
-  height: 28rem;
+  height: 100%;
   border-radius: 0.5rem;
   cursor: pointer;
   transition: 0.3s;
@@ -52,4 +52,14 @@
   height: 0.2rem;
   border-color: #E5E5E5;
   margin: 1.5rem 0;
+}
+
+.product-container img {
+  width: 100%;
+}
+
+@media (max-width: 800px) {
+  .product-container {
+    width: calc((100% - (1.5rem * 2)) / 2);
+  }
 }

@@ -34,3 +34,9 @@
   justify-content: start;
   align-items: start;
 }
+
+@media (max-width: 800px) {
+  .products-search-container {
+    flex-direction: column;
+  }
+}

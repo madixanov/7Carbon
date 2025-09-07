@@ -75,7 +75,7 @@ export default function Header() {
         {mobileMenuOpen && (
           <aside className="mobile-menu mobile-only">
             <div data-aos="fade-up" data-aos-duration="1000">Главная страница</div>
-            <div data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100">Продукты</div>
+            <Link style={{textDecoration: "none", color: "white"}} to="/products"><span onClick={() => handleClick("products")} className={selected === "products" && "selected"}></span><div data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100">Продукты</div></Link>
             <div data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">Преимущества</div>
             <div data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300">Наши преимущества</div>
             <div data-aos="fade-up" data-aos-duration="1000" data-aos-delay="400">Контакты</div>
