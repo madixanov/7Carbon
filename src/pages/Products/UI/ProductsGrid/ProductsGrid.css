@@ -5,8 +5,48 @@
   width: 100%;
 }
 
+.products-grid-container {
+  width: 100%;
+}
+
 @media (max-width: 800px) {
   .products-grid {
     justify-content: space-between;
   }
+}
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  margin-top: 2rem;
+}
+
+.pagination-arrow {
+  padding: 0.6rem 1rem;
+  border: 1px solid #c49331;
+  background: black;
+  color: white;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  font-size: 1.6rem;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.pagination-arrow:hover:not(:disabled) {
+  background: #c49331;
+  color: black;
+}
+
+.pagination-arrow:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.pagination-info {
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: white;
 }
