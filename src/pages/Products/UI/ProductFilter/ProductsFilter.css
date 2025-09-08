@@ -1,13 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100..700;1,100..700&display=swap');
 
 .products-filter-container {
-  width: 22.5rem;
+  width: 35rem;
   display: flex;
   flex-direction: column;
   justify-content: start;
   align-items: start;
   background: black;
   font-family: "IBM Plex Sans", sans-serif;
+  position: sticky;
+  top: 7rem;
+  overflow-y: auto;
 }
 
 .filter {
@@ -30,6 +33,7 @@
   text-transform: uppercase;
   border: 0.1rem solid #fff;
   border-radius: 0.3rem;
+  width: 100%;
 }
 
 .filter span {
@@ -104,6 +108,10 @@
 
 .filter-button-cotainer button:active{
   background-color: #bf9a52;
+}
+
+.filter-container {
+  width: 100%;
 }
 
 @media (max-width: 800px) {
