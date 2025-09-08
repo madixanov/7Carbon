@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import Product from "../ProductContainer/ProductContainer";
 import "./ProductsGrid.css";
 
@@ -25,6 +25,10 @@ export default function ProductsGrid() {
   const handleNext = () => {
     if (currentPage < totalPages) setCurrentPage(currentPage + 1);
   };
+
+  useEffect(() => {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  }, [currentPage]);
 
   return (
     <div className="products-grid-container">
