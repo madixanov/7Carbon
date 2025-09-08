@@ -4,12 +4,12 @@ import "./ProductsGrid.css";
 
 export default function ProductsGrid() {
   // Здесь пока тестовые продукты
-  const products = Array.from({ length: 20 }, (_, i) => ({
+  const products = Array.from({ length: 29 }, (_, i) => ({
     id: i + 1,
     name: `Product ${i + 1}`,
   }));
 
-  const productsPerPage = 9;
+  const productsPerPage = 12;
   const [currentPage, setCurrentPage] = useState(1);
 
   const startIndex = (currentPage - 1) * productsPerPage;
