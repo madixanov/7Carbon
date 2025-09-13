@@ -19,7 +19,7 @@ export default function Services({ text }) {
   return (
     <div className="services-container">
       <h1 data-aos="fade-up" data-aos-duration="1000">{text}</h1>
-      <div className="service-row" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100">
+      <div className="service-row" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
         {services.map((service) => {
           return (
             <div className={`service ${service.discount && "service-discount"}`}>

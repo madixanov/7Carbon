@@ -1,0 +1,30 @@
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&display=swap');
+
+.service-details-main {
+  padding-top: 13rem;
+}
+
+.service-details-sub-container {
+  max-width: 990px;
+  margin: 0 auto;
+}
+
+.button-div {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.back-button {
+  width: 20rem;
+  height: 6rem;
+  background: #C4C4C4;
+  color: black;
+  cursor: pointer;
+  border: none;
+  font-size: 1.6rem;
+  font-weight: 400;
+  font-family: "Exo 2", sans-serif;
+  border-radius: 8px;
+}

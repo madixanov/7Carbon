@@ -53,7 +53,7 @@ export default function Header() {
             <Link
               style={{ textDecoration: "none", color: "white" }}
               to="/"
-              className={location.pathname === "/" ? "selected" : ""}
+              className={`link ${location.pathname === "/" ? "selected" : ""}`}
             >
               Главная страница
             </Link>
@@ -61,7 +61,7 @@ export default function Header() {
             <Link
               style={{ textDecoration: "none", color: "white" }}
               to="/products"
-              className={location.pathname === "/products" ? "selected" : ""}
+              className={`link ${location.pathname === "/products" ? "selected" : ""}`}
             >
               Продукты
             </Link>
@@ -69,7 +69,7 @@ export default function Header() {
             <Link
               style={{ textDecoration: "none", color: "white" }}
               to="/advantages"
-              className={location.pathname === "/advantages" ? "selected" : ""}
+              className={`link ${location.pathname === "/advantages" ? "selected" : ""}`}
             >
               Наши преимущества
             </Link>
@@ -77,7 +77,7 @@ export default function Header() {
             <Link
               style={{ textDecoration: "none", color: "white" }}
               to="/contacts"
-              className={location.pathname === "/contacts" ? "selected" : ""}
+              className={`link ${location.pathname === "/contacts" ? "selected" : ""}`}
             >
               Контакты
             </Link>
