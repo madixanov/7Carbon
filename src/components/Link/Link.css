@@ -7,9 +7,11 @@
   gap: 1.5rem;
   font-family: "IBM Plex Sans", sans-serif;
   margin-bottom: 1.7rem;
+  flex-wrap: wrap; /* чтобы не ломалось на очень узких экранах */
 }
 
-.home-link, .services-link {
+.home-link, 
+.services-link {
   position: relative;
   color: white;
   text-decoration: none;
@@ -34,7 +36,7 @@
   width: 100%;
 }
 
-.service-link span {
+.divider {
   color: #777777;
   font-size: 1.2rem;
   font-weight: 900;
@@ -45,4 +47,46 @@
   margin: 0;
   color: #CC9933;
   font-size: 2rem;
+}
+
+.link-segment {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  font-weight: 400;
+}
+
+/* 📱 Мобильная адаптация */
+@media (max-width: 768px) {
+  .home-link,
+  .services-link,
+  .service-link p {
+    font-size: 2rem; /* меньше шрифт */
+  }
+
+  .service-link {
+    gap: 0.8rem; /* меньше расстояние */
+    margin-bottom: 1rem;
+  }
+
+  .divider {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .home-link,
+  .services-link,
+  .service-link p {
+    font-size: 1.6rem;
+  }
+
+  .service-link {
+    gap: 0.5rem;
+    margin-bottom: 0.7rem;
+  }
+
+  .divider {
+    font-size: 0.9rem;
+  }
 }

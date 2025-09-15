@@ -1,0 +1,23 @@
+.product-details-main {
+  display: flex;
+  flex-direction: column;
+  padding-top: 12rem;
+}
+
+.product-details-sub {
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+}
+
+@media (max-width: 1200px) {
+  .product-details-sub {
+    gap: 2rem;
+  }
+}
+
+@media (max-width: 1000px) {
+  .product-details-sub {
+    flex-direction: column;
+  }
+}

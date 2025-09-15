@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100..700;1,100..700&display=swap');
+
+.price-list-container {
+  width: 36rem;
+  background: #161616;
+  box-shadow: 0rem 0.4rem 1.6rem rgba(255, 255, 255, 0.25);
+  border-radius: 1.2rem;
+  padding: 2rem;
+  font-family: "IBM Plex Sans", sans-serif;
+
+  /* sticky по умолчанию */
+  position: sticky;
+  top: 8rem; /* отступ сверху при скролле */
+  z-index: 10;
+}
+
+.price-list-container h1 {
+  margin: 0;
+  font-size: 2.4rem;
+  font-weight: 500;
+  margin-bottom: 2rem;
+}
+
+.price-list-container p {
+  margin: 0;
+  font-size: 1.4rem;
+  font-weight: 400;
+  margin-bottom: 2rem;
+}
+
+.product-button-row {
+  width: 100%;
+  display: flex;
+  gap: 1.2rem;
+}
+
+.product-button-row button {
+  width: 100%;
+  height: 4rem;
+  border-radius: 0.4rem;
+  font-size: 1.4rem;
+  font-weight: 400;
+  cursor: pointer;
+  color: white;
+}
+
+.price-button {
+  background: linear-gradient(180deg, #000 -40%, #CC9933 100%);
+  background-color: transparent;
+  border: none;
+  transition: 0.3s;
+}
+
+.price-button:hover {
+  background: none;
+  background-color: #DDAA33;
+}
+
+.contact-button {
+  background: transparent;
+  border: 1px solid #fff;
+  transition: 0.3s;
+}
+
+.contact-button:hover {
+  background-color: white;
+  color: black;
+}
+
+@media (max-width: 1000px) {
+  .price-list-container {
+    width: 100%;
+    margin: 2rem 0;
+
+    /* убрать sticky */
+    position: static;
+    top: auto;
+  }
+}

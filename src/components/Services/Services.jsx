@@ -22,7 +22,7 @@ export default function Services({ text }) {
       <div className="service-row" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
         {services.map((service) => {
           return (
-            <div className={`service ${service.discount && "service-discount"}`}>
+            <div className={`service ${service.discount && "service-discount"}`} >
               <div className="service-header">
                 <span>{service.name}</span>
                 {service.discount && <div className="discount-container">АКЦИЯ</div>}

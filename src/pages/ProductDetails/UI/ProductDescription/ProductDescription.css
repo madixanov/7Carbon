@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100..700;1,100..700&display=swap');
+
+.product-details-description {
+  width: 99rem;
+  font-family: "IBM Plex Sans", sans-serif;
+} 
+
+.product-photo {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+  flex-wrap: wrap; /* чтобы на мобилках переносились */
+  flex: 1;
+}
+
+.product-photo img {
+  flex: 1;
+  min-width: calc(50% - 0.5rem);
+  border-radius: 1.2rem;
+  object-fit: cover;
+}
+
+.second-photo {
+  transform: scaleX(-1);
+}
+
+.product-details-text {
+  width: 100%;
+}
+
+@media (max-width: 1000px) {
+  .product-details-description {
+    width: 100%;
+  }
+
+  .product-photo {
+    flex-direction: row;
+  }
+}
+
+@media (max-width: 800px) {
+  .product-photo {
+    flex-direction: column;
+    align-items: center; /* центрируем */
+  }
+
+  .product-photo img {
+    width: 100%;
+  }
+}

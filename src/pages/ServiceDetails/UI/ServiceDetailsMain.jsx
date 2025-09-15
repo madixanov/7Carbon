@@ -1,6 +1,6 @@
 import Services from '../../../components/Services/Services'
 import Location from '../../../components/Location/Location'
-import ServiceLink from './ServiceLink/ServiceLink'
+import Link from '../../../components/Link/Link'
 import ServiceDescription from './ServiceDescription/ServiceDescription'
 import ServicecProcess from './ServiceProcess/ServicecProcess'
 import { useNavigate } from 'react-router-dom'
@@ -17,7 +17,7 @@ export default function ServiceDetailsMain() {
     <main className="service-details-main">
       <div className="main-container">
         <div className="service-details-sub-container">
-          <ServiceLink />
+          <Link />
           <ServiceDescription  />
           <ServicecProcess  />
         </div>
