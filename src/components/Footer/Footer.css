@@ -67,14 +67,6 @@ footer {
   width: 100%;
 }
 
-.mid-footer-div h1 {
-  text-transform: uppercase;
-  font-weight: 500;
-  font-size: 3.8rem;
-  margin: 0;
-  margin-bottom: 4rem;
-}
-
 .left-sub-div {
   display: flex;
   flex-direction: column;
@@ -87,7 +79,7 @@ footer {
   gap: 3.5rem;
 }
 
-.right-footer-div h1 {
+.footer-div h1 {
   text-transform: uppercase;
   font-weight: 500;
   font-size: 3.8rem;
@@ -99,5 +91,14 @@ footer {
   .footer-container {
     flex-direction: column;
     gap: 3rem;
+    align-items: center;
+  }  
+
+  .footer-div {
+    width: 45rem;
+  }
+  
+  .footer-div.mid {
+    margin: 0;
   }
 }
