@@ -49,7 +49,7 @@ export default function Projects() {
               spaceBetween: 20,
             },
             1024: {
-              slidesPerView: 3, // десктоп
+              slidesPerView: 3.5, // десктоп
               spaceBetween: 30,
             },
           }}

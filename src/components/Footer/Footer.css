@@ -1,109 +1,103 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
-
 footer {
   font-size: 1.8rem;
-  background-color: rgba(196, 196, 196, 0.5);
   padding: 30px 0;
+  font-family: "IBM Plex Sans", sans-serif;
 }
 
 .footer-container {
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: flex-start;
+  gap: 10rem; /* отступы между колонками */
 }
 
-.signup-container {
-  display: flex;
-  gap: 1.5rem;
-  justify-content: center;
-  align-items: center;
-}
-
-.signup-container input {
-  width: 41rem;
-  background-color: #383E40;
-  color: white;
-  font-size: 1.6rem;
-  border: none;
-  padding: 0.8rem 1.6rem;
-  border-radius: 0.8rem;
-  font-family: "Montserrat", sans-serif;
-}
-
-.signup-container input:focus {
-  outline: none;
-}
-
-.signup-container button {
-  font-family: "Montserrat", sans-serif;
-  padding: 0.8rem 3.2rem;
-  font-size: 1.6rem;
-  border: none;
-  background-color: #F2F2F2;
-  color: #333333;
-  border-radius: 10rem;
-  cursor: pointer;
-}
-
-.social-media {
+.footer-div {
   display: flex;
   flex-direction: column;
-  gap: 1rem;
-  align-items: center;
-  font-family: "Inter", sans-serif;
+  flex: 1;          /* все три колонки занимают равную ширину */
+  min-width: 220px; /* ограничение, чтобы не схлопывались на узких экранах */
 }
 
-.social-media span {
-  font-size: 1.8rem;
-  font-weight: 700;
-}
-
-.icon-row {
-  display: flex;
-  justify-content: end;
+.footer-div span {
+  font-size: 2.4rem;
+  font-weight: 300;
   width: 100%;
-  gap: 1rem;
 }
 
-.icon-row img {
-  width: 2.4rem;
-  height: 2.4rem;
+.footer-div.mid {
+  flex: 1.2;
+  margin-right: 8rem;
+}
+
+.footer-div.right {
+  flex: 0.7;
+}
+
+.footer-logo {
+  margin-bottom: 3.5rem;
+  width: 25rem;
+}
+
+.footer-div.left span {
+  margin-bottom: 2.3rem;
+  font-size: 2.4rem;
+  font-weight: 300;
+}
+
+.number {
+  font-weight: 500;
+  margin: 0;
+  margin-bottom: 2.3rem;
+  font-size: 2.4rem;
+}
+
+.social-row {
+  display: flex;
+  gap: 3rem;
+}
+
+.social-row img {
+  width: 3rem;
   cursor: pointer;
-  transition: all 0.3s ease-in-out;
 }
 
-.icon-row img:hover {
-  transform: scale(1.1);
+.div-content {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
 }
 
-.logo-text-f {
-  font-size: 1.8rem;
-  font-weight: 600;
-  cursor: pointer;
-  font-family: "Inter", sans-serif;
+.mid-footer-div h1 {
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 3.8rem;
+  margin: 0;
+  margin-bottom: 4rem;
+}
+
+.left-sub-div {
+  display: flex;
+  flex-direction: column;
+  gap: 3.5rem;
+}
+
+.right-sub-div {
+  display: flex;
+  flex-direction: column;
+  gap: 3.5rem;
+}
+
+.right-footer-div h1 {
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 3.8rem;
+  margin: 0;
+  margin-bottom: 4rem;
 }
 
 @media (max-width: 800px) {
   .footer-container {
     flex-direction: column;
     gap: 3rem;
-  }
-
-  .logo-text-f {
-    font-size: 3rem;
-  }
-
-  .signup-container input {
-    width: 60%;
-  }
-
-  .signup-container button {
-    width: 40%;
-    font-size: 1.4rem;
-    padding: 0.8rem 2.5rem;
-  }
-
-  .icon-row {
-    justify-content: center;
   }
 }
