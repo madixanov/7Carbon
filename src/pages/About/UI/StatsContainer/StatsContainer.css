@@ -1,0 +1,82 @@
+.stats-container {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  padding: 4.5rem 0;
+  gap: 5rem;
+  border: 1px solid rgba(255,255,255, 0.2);
+  border-radius: 0.8rem;
+  margin-top: 4rem;
+  margin-bottom: 10rem;
+  font-family: "IBM Plex Sans", sans-serif;
+}
+
+.stats {
+  display: flex;
+  flex-direction: column;
+}
+
+.stats h1 {
+  font-size: 9rem;
+  font-weight: 500;
+  color: #E1CE86;
+  margin: 0;
+}
+
+.stats span {
+  font-weight: 300;
+  font-size: 2.4rem;
+}
+
+@media (max-width: 1200px) {
+  .stats-container {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 5rem;
+    justify-content: center;
+    align-items: center;
+    padding: 1.5rem;
+  }
+
+  .stats h1 {
+    font-size: 8rem;
+  }
+
+  .stats span {
+    font-size: 2.2rem;
+  }
+}
+
+@media (max-width: 800px) {
+  .stats-container {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 5rem;
+    justify-content: center;
+    align-items: center;
+    padding: 1.5rem;
+  }
+
+  .stats h1 {
+    font-size: 6rem;
+  }
+
+  .stats span {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .stats-container {
+    flex-direction: column;
+  }
+
+  .stats {
+    justify-content: center;
+  }
+
+  .stats h1 {
+    text-align: center;
+  }
+}

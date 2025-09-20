@@ -22,6 +22,7 @@ footer {
   font-size: 2.4rem;
   font-weight: 300;
   width: 100%;
+  cursor: pointer;
 }
 
 .footer-div.mid {
@@ -87,11 +88,53 @@ footer {
   margin-bottom: 4rem;
 }
 
+.selected {
+  font-weight: 500;
+}
+
+@media (max-width: 1200px) {
+
+  .footer-div h1 {
+    font-size: 3rem;
+  }
+
+  .footer-div span {
+    font-size: 2.2rem;
+  }
+}
+
+@media (max-width: 1000px) {
+  .footer-container {
+    justify-content: start;
+    gap: 1rem;
+  }
+
+  .footer-div.mid {
+    margin: 0;
+    flex: 1;
+  }
+
+  .footer-div h1 {
+    font-size: 2.5rem;
+  }
+
+  .div-content span {
+    font-size: 2rem;
+  }
+
+  .footer-div.left span {
+    font-size: 2rem;
+  };
+
+  .number {
+    font-size: 2rem;
+  }
+}
+
 @media (max-width: 800px) {
   .footer-container {
     flex-direction: column;
     gap: 3rem;
-    align-items: center;
   }  
 
   .footer-div {
@@ -100,5 +143,48 @@ footer {
   
   .footer-div.mid {
     margin: 0;
+  }
+
+  .footer-div h1{
+    font-size: 3rem;
+    margin-bottom: 0.8rem;
+  }
+
+  .footer-div span {
+    font-size: 2.2rem;
+  }
+
+  .footer-div.left span {
+    font-size: 2.2rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .footer-container {
+    flex-direction: column;
+    align-items: center;
+    gap: 4rem;
+  }
+
+  .footer-div {
+    flex: unset;
+    width: 100%;
+    max-width: 45rem;
+    align-items: center;
+    text-align: center;
+  }
+
+  .footer-div h1 {
+    font-size: 2.2rem;
+    margin-bottom: 2rem;
+  }
+
+  .footer-div span {
+    font-size: 1.8rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .social-row {
+    justify-content: center;
   }
 }
