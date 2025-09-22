@@ -1,0 +1,17 @@
+
+.project-details-main {
+  padding-top: 13rem;
+  font-family: "IBM Plex Sans", sans-serif;
+}
+
+.sub-container {
+  max-width: 99rem;
+  width: 100%;
+  margin: 0 auto;
+  margin-bottom: 3rem;
+}
+
+.main-photo {
+  border-radius: 0.8rem;
+  margin-bottom: 1.5rem;
+}

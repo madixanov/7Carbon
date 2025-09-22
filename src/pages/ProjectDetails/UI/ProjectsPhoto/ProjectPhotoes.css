@@ -1,0 +1,69 @@
+.project-photoes img {
+  border-radius: 0.8rem;
+  height: 100%;
+}
+
+.project-photoes {
+  position: relative;
+  overflow: visible;      /* чтобы ничего не обрезалось */
+}
+
+.project-photoes .swiper {
+  min-height: 30rem; /* или сколько нужно */
+}
+
+/* Сам блок пагинации позиционируем абсолютно внутри .project-photoes */
+.project-photoes .swiper-pagination {
+  position: absolute !important;
+  left: 50% !important;
+  transform: translateX(-50%);
+  bottom: 1rem !important; /* отступ от низа слайдера */
+  z-index: 20;
+  text-align: center;
+}
+
+/* Стили самих буллетов */
+.custom-bullet {
+  display: inline-block;
+  width: 30px;
+  height: 4px;
+  background: #777;
+  margin: 0 6px;
+  border-radius: 2px;
+  opacity: 0.6;
+  cursor: pointer;
+  transition: all 0.25s ease;
+}
+
+.custom-bullet.swiper-pagination-bullet-active {
+  background: #c9a646;
+  opacity: 1;
+}
+
+.project-photoes img {
+  user-select: none;
+  -webkit-user-drag: none;
+  pointer-events: none; /* если не нужно, чтобы картинка ловила клики */
+}
+
+/* Адаптив: меньше отступ снизу на мобилке */
+@media (max-width: 700px) {
+  .project-photoes { padding-bottom: 2.2rem; }
+  .custom-bullet { width: 24px; }
+  .project-photoes .swiper-pagination { bottom: 0.6rem !important; }
+  .project-photoes .swiper {
+    min-height: 25rem; /* или сколько нужно */
+  }
+}
+
+@media (max-width: 550px) {
+  .project-photoes .swiper {
+    min-height: 30rem; /* или сколько нужно */
+  }
+}
+
+@media (max-width: 450px) {
+  .project-photoes .swiper {
+    min-height: 25rem; /* или сколько нужно */
+  }
+}

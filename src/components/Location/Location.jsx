@@ -18,7 +18,7 @@ export default function Location() {
       {/* Кнопка «Открыть в Google Maps» */}
       <div style={{ textAlign: "center", marginTop: "0.5rem" }}>
         <a
-          href="https://www.google.com/maps/place/?q=place_id:ChIJfUHVsrAi2z4RzW2wya3rQqM"
+          href="https://www.google.com/maps/place/7Carbon+LLC/@41.3781377,69.2945141,1298m/data=!3m2!1e3!4b1!4m6!3m5!1s0x38aef30754e648c9:0xa87188fc945844a3!8m2!3d41.3781377!4d69.297089!16s%2Fg%2F11xfstkgb8?entry=ttu&g_ep=EgoyMDI1MDkxNy4wIKXMDSoASAFQAw%3D%3D"
           target="_blank"
           rel="noopener noreferrer"
           style={{textDecoration: "none", color: "white"}}

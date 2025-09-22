@@ -41,14 +41,14 @@ export default function Projects() {
           className="mySwiper"
           breakpoints={{
             320: {
-              slidesPerView: 2, // телефоны побольше
+              slidesPerView: 2.5, // телефоны побольше
               spaceBetween: 10,
             },
             768: {
-              slidesPerView: 2, // планшеты
+              slidesPerView: 2.5, // планшеты
               spaceBetween: 20,
             },
-            1024: {
+            1200: {
               slidesPerView: 3.5, // десктоп
               spaceBetween: 30,
             },
