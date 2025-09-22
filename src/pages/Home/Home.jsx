@@ -6,8 +6,7 @@ import About from "./UI/About/About";
 import Services from "../../components/Services/Services";
 import Projects from "./UI/Projects/Projects";
 import News from "./UI/News/News";
-
-import map from "../../assets/photo/Search.svg"
+import Location from "../../components/Location/Location"
 
 import AOS from 'aos';
 import 'aos/dist/aos.css'; // You can also use <link> for styles
@@ -31,12 +30,7 @@ export default function HomePage() {
           <Services text={"Наши услуги"} />
           <Projects />
           <News />
-        </div>
-        <div className="map-container">
-          <div className="main-container">
-            <h1 data-aos="fade-up" data-aos-duration="1000">НАШ ОФИС</h1>
-            <img src={map} alt="map" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100"/>
-          </div>
+          <Location />
         </div>
       </main>
       <Footer />
