@@ -68,10 +68,10 @@ export default function Header() {
 
             <Link
               style={{ textDecoration: "none", color: "white" }}
-              to="/advantages"
+              to="/about"
               className={`link ${location.pathname === "/advantages" ? "selected" : ""}`}
             >
-              Наши преимущества
+              О компании
             </Link>
 
             <Link
@@ -106,14 +106,14 @@ export default function Header() {
             </Link>
             <Link
               style={{ textDecoration: "none", color: "white" }}
-              to="/advantages"
+              to="/about"
             >
               <div
                 data-aos="fade-up"
                 data-aos-duration="1000"
                 data-aos-delay="200"
               >
-                Наши преимущества
+                О компании
               </div>
             </Link>
             <Link
