@@ -12,7 +12,7 @@ export default function Location() {
         loading="lazy"
         allowFullScreen
         referrerPolicy="no-referrer-when-downgrade"
-        src="https://www.google.com/maps/embed?pb=!1m2!2m1!1s7carbon!3m1!1s0x0:0x0!2m2!1sen!2s!4v1700000000000!5m2!1sen!2s"
+        src="https://www.google.com/maps?q=41.3781377,69.297089&z=17&output=embed"
       ></iframe>
 
       {/* Кнопка «Открыть в Google Maps» */}
