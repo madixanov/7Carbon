@@ -1,8 +1,8 @@
 import "./Footer.css"
 import footer_logo from "../../assets/photo/footer_logo.svg"
-import telegram from "../../assets/icons/telegram.svg"
-import facebook from "../../assets/icons/facebook.svg"
-import instagram from "../../assets/icons/instagram.svg"
+import telegram from "../../assets/icons/tg.svg"
+import facebook from "../../assets/icons/fb.svg"
+import instagram from "../../assets/icons/ig.svg"
 import useSelectedStore from "../../store/nav-store"
 import { useNavigate } from "react-router-dom"
 
