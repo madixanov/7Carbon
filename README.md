@@ -62,17 +62,20 @@ The project follows a modular and organized structure for scalability:
 
 Installation
   1. Clone the repository:
-    ```bash
+```bash
     git clone [https://github.com/madixanov/7Carbon.git](https://github.com/madixanov/7Carbon.git)
-    cd 7carbon```
+    cd 7carbon
+```
 
   3. Install dependencies:
-    ```bash
-    npm install```
+```bash
+    npm install
+```
 
   5. Start development server:
-    ```bash
-    npm run dev```
+```bash
+    npm run dev
+```
 
 ---
 
