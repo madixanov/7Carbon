@@ -18,7 +18,9 @@
 * **User-Centric UI:** A clean, modern interface...
 
 ## 📸 Interface Preview
-![Home Page](./src/assets/photo/preview.png)
+![Home Page](https://github.com/user-attachments/assets/c5802008-be05-4c69-b1ec-46c35eb71be8)
+![Products Page](https://github.com/user-attachments/assets/815b2796-a7f7-404f-9cea-ad14380c2010)
+![About Page](https://github.com/user-attachments/assets/d4f201c1-cc31-450d-a24e-1923f73a841b)
 
 ---
 
