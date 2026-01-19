@@ -2,7 +2,7 @@
 
 **7Carbon** is a high-end automotive platform based in Uzbekistan. We specialize in providing a seamless shopping experience for car parts, bespoke carbon fiber manufacturing, and showcasing large-scale custom vehicle transformations.
 
-[Explore the Shop](https://7carbon.uz) | [Our Projects](#-key-pages) | [Contact](#-contact--orders)
+[Explore the Shop](https://7carbon.netlify.app)
 
 ---
 
