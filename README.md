@@ -64,16 +64,15 @@ Installation
   1. Clone the repository:
     ```bash
     git clone [https://github.com/madixanov/7Carbon.git](https://github.com/madixanov/7Carbon.git)
-    cd 7carbon
-    ```
-  2. Install dependencies:
+    cd 7carbon```
+
+  3. Install dependencies:
     ```bash
-    npm install
-    ```
-  3. Start development server:
+    npm install```
+
+  5. Start development server:
     ```bash
-    npm run dev
-    ```
+    npm run dev```
 
 ---
 
